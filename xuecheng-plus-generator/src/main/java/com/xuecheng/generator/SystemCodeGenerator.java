@@ -19,10 +19,10 @@ public class SystemCodeGenerator {
 	private static final String SERVICE_NAME = "system";
 
 	private static final String DATA_SOURCE_USER_NAME  = "root";
-	private static final String DATA_SOURCE_PASSWORD  = "mysql";
+	private static final String DATA_SOURCE_PASSWORD  = "123123asd";
 	private static final String[] TABLE_NAMES = new String[]{
-			"course_category",
-			"dictionary",
+//			"course_category",
+			"dictionary"
 	};
 
 	// TODO 默认生成entity，需要生成DTO修改此变量
@@ -54,7 +54,7 @@ public class SystemCodeGenerator {
 		// 数据库配置
 		DataSourceConfig dsc = new DataSourceConfig();
 		dsc.setDbType(DbType.MYSQL);
-		dsc.setUrl("jdbc:mysql://192.168.101.65:3306/xcplus_" + SERVICE_NAME
+		dsc.setUrl("jdbc:mysql://116.62.191.135:3306/xc_plus_" + SERVICE_NAME
 				+ "?useUnicode=true&useSSL=false&characterEncoding=utf8");
 		dsc.setDriverName("com.mysql.cj.jdbc.Driver");
 		dsc.setUsername(DATA_SOURCE_USER_NAME);
@@ -64,7 +64,7 @@ public class SystemCodeGenerator {
 		// 包配置
 		PackageConfig pc = new PackageConfig();
 		pc.setModuleName(SERVICE_NAME);
-		pc.setParent("com.xuecheng");
+		pc.setParent("top.itcat.xuecheng");
 
 		pc.setServiceImpl("service.impl");
 		pc.setXml("mapper");

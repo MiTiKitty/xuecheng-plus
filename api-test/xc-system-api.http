@@ -1,0 +1,2 @@
+### 查询所有数据字典中的数据
+GET {{system_host}}/system/dictionary/all

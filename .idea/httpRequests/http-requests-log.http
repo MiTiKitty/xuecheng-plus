@@ -1,3 +1,26 @@
+GET http://localhost:63110/system/dictionary/all
+
+<> 2023-02-05T010626.200.json
+
+###
+
+GET http://localhost:63110/system/dictionary/all
+
+<> 2023-02-05T010251.404.json
+
+###
+
+GET http://{{system_host}}/system/dictionary/all
+
+###
+
+GET http://localhost:63110/system/dictionary/all
+Content-Type: application/json
+
+<> 2023-02-05T125745.404.json
+
+###
+
 ### 课程查询接口
 POST {{content_host}}/course/list?pageNo=1&pageSize=5
 Content-Type: application/json
