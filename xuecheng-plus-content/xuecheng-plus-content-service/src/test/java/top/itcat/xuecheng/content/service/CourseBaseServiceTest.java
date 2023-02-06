@@ -27,4 +27,9 @@ public class CourseBaseServiceTest {
         System.out.println(result);
     }
 
+    @Test
+    public void testCreateCourse() {
+        // TODO CreateCourse方法待测试
+    }
+
 }

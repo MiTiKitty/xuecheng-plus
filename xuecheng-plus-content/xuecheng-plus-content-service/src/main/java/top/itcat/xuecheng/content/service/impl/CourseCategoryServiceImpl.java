@@ -28,18 +28,18 @@ public class CourseCategoryServiceImpl extends ServiceImpl<CourseCategoryMapper,
     private CourseCategoryMapper courseCategoryMapper;
 
     @Override
-    public List<CourseCategoryDto> queryTreeNodes() {
+    public List<CourseCategoryDto> queryTreeNodes(String rootId) {
         LambdaQueryWrapper<CourseCategory> queryWrapper = new LambdaQueryWrapper<>();
         queryWrapper.eq(CourseCategory::getIsShow, "1").orderByAsc(CourseCategory::getId);
         List<CourseCategory> list = courseCategoryMapper.selectList(queryWrapper);
-        return queryTreeNodes(list);
+        return queryTreeNodes(list, rootId);
     }
 
-    private List<CourseCategoryDto> queryTreeNodes(List<CourseCategory> list) {
+    private List<CourseCategoryDto> queryTreeNodes(List<CourseCategory> list, String rootId) {
         List<CourseCategoryDto> result = new ArrayList<>();
         for (int i = 0; i < list.size(); i++) {
             CourseCategory category = list.get(i);
-            if (category.getId().equals("1")) {
+            if (category.getId().equals(rootId)) {
                 CourseCategoryDto root = new CourseCategoryDto();
                 BeanUtils.copyProperties(category, root);
                 result.add(root);

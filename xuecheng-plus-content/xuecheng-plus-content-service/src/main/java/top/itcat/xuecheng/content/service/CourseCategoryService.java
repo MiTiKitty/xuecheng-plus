@@ -18,7 +18,8 @@ public interface CourseCategoryService extends IService<CourseCategory> {
 
     /**
      * 查询所有课程分类
+     * @param rootId 根节点id
      * @return
      */
-    List<CourseCategoryDto> queryTreeNodes();
+    List<CourseCategoryDto> queryTreeNodes(String rootId);
 }

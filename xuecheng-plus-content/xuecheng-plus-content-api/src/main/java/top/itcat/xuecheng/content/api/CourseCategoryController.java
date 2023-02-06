@@ -31,7 +31,7 @@ public class CourseCategoryController {
     @ApiOperation("课程分类查询接口")
     @GetMapping("/tree-nodes")
     public List<CourseCategoryDto> queryTreeNodes() {
-        return courseCategoryService.queryTreeNodes();
+        return courseCategoryService.queryTreeNodes("1");
     }
 
 }

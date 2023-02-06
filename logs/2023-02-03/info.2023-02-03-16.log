@@ -84,7 +84,7 @@ java.net.ConnectException: Connection refused: connect
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
-	at top.itcat.xuecheng.CourseApiApplication.main(CourseApiApplication.java:19)
+	at top.itcat.xuecheng.content.CourseApiApplication.main(CourseApiApplication.java:19)
 2023-02-03 16:02:10,288 ERROR [main][NamingProxy.java:617] - [NA] failed to request
 java.net.ConnectException: Connection refused: connect
 	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
@@ -133,7 +133,7 @@ java.net.ConnectException: Connection refused: connect
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
-	at top.itcat.xuecheng.CourseApiApplication.main(CourseApiApplication.java:19)
+	at top.itcat.xuecheng.content.CourseApiApplication.main(CourseApiApplication.java:19)
 2023-02-03 16:02:12,331 ERROR [main][NamingProxy.java:617] - [NA] failed to request
 java.net.ConnectException: Connection refused: connect
 	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
@@ -182,7 +182,7 @@ java.net.ConnectException: Connection refused: connect
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
-	at top.itcat.xuecheng.CourseApiApplication.main(CourseApiApplication.java:19)
+	at top.itcat.xuecheng.content.CourseApiApplication.main(CourseApiApplication.java:19)
 2023-02-03 16:02:12,331 ERROR [main][NamingProxy.java:617] - [NA] failed to request
 java.net.ConnectException: Connection refused: connect
 	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
@@ -231,7 +231,7 @@ java.net.ConnectException: Connection refused: connect
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
-	at top.itcat.xuecheng.CourseApiApplication.main(CourseApiApplication.java:19)
+	at top.itcat.xuecheng.content.CourseApiApplication.main(CourseApiApplication.java:19)
 2023-02-03 16:02:14,368 ERROR [main][NamingProxy.java:617] - [NA] failed to request
 java.net.ConnectException: Connection refused: connect
 	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
@@ -280,7 +280,7 @@ java.net.ConnectException: Connection refused: connect
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
-	at top.itcat.xuecheng.CourseApiApplication.main(CourseApiApplication.java:19)
+	at top.itcat.xuecheng.content.CourseApiApplication.main(CourseApiApplication.java:19)
 2023-02-03 16:02:14,368 ERROR [main][NamingProxy.java:617] - [NA] failed to request
 java.net.ConnectException: Connection refused: connect
 	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
@@ -329,7 +329,7 @@ java.net.ConnectException: Connection refused: connect
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
-	at top.itcat.xuecheng.CourseApiApplication.main(CourseApiApplication.java:19)
+	at top.itcat.xuecheng.content.CourseApiApplication.main(CourseApiApplication.java:19)
 2023-02-03 16:02:14,370 ERROR [main][NamingProxy.java:552] - request: /nacos/v1/ns/instance/list failed, servers: [localhost:8848], code: 500, msg: Connection refused: connect
 2023-02-03 16:02:14,370 ERROR [main][NamingProxy.java:552] - request: /nacos/v1/ns/instance/list failed, servers: [localhost:8848], code: 500, msg: Connection refused: connect
 2023-02-03 16:02:14,370 ERROR [main][HostReactor.java:347] - [NA] failed to update serviceName: DEFAULT_GROUP@@content-api
@@ -358,7 +358,7 @@ ErrCode:500, ErrMsg:failed to req API:/nacos/v1/ns/instance/list after all serve
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
-	at top.itcat.xuecheng.CourseApiApplication.main(CourseApiApplication.java:19)
+	at top.itcat.xuecheng.content.CourseApiApplication.main(CourseApiApplication.java:19)
 2023-02-03 16:02:14,370 ERROR [main][HostReactor.java:347] - [NA] failed to update serviceName: DEFAULT_GROUP@@content-api
 ErrCode:500, ErrMsg:failed to req API:/nacos/v1/ns/instance/list after all servers([localhost:8848]) tried: java.net.ConnectException: Connection refused: connect
 	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:556)
@@ -385,7 +385,7 @@ ErrCode:500, ErrMsg:failed to req API:/nacos/v1/ns/instance/list after all serve
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
-	at top.itcat.xuecheng.CourseApiApplication.main(CourseApiApplication.java:19)
+	at top.itcat.xuecheng.content.CourseApiApplication.main(CourseApiApplication.java:19)
 2023-02-03 16:02:14,384 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 63040 (http) with context path '/content'
 2023-02-03 16:02:14,384 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 63040 (http) with context path '/content'
 2023-02-03 16:02:16,425 ERROR [main][NamingProxy.java:617] - [NA] failed to request
@@ -444,7 +444,7 @@ java.net.ConnectException: Connection refused: connect
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
-	at top.itcat.xuecheng.CourseApiApplication.main(CourseApiApplication.java:19)
+	at top.itcat.xuecheng.content.CourseApiApplication.main(CourseApiApplication.java:19)
 2023-02-03 16:02:16,425 ERROR [main][NamingProxy.java:617] - [NA] failed to request
 java.net.ConnectException: Connection refused: connect
 	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
@@ -501,7 +501,7 @@ java.net.ConnectException: Connection refused: connect
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
-	at top.itcat.xuecheng.CourseApiApplication.main(CourseApiApplication.java:19)
+	at top.itcat.xuecheng.content.CourseApiApplication.main(CourseApiApplication.java:19)
 2023-02-03 16:02:17,428 ERROR [com.alibaba.nacos.client.naming.updater][NamingProxy.java:617] - [NA] failed to request
 java.net.ConnectException: Connection refused: connect
 	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
@@ -632,7 +632,7 @@ java.net.ConnectException: Connection refused: connect
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
-	at top.itcat.xuecheng.CourseApiApplication.main(CourseApiApplication.java:19)
+	at top.itcat.xuecheng.content.CourseApiApplication.main(CourseApiApplication.java:19)
 2023-02-03 16:02:18,464 ERROR [main][NamingProxy.java:617] - [NA] failed to request
 java.net.ConnectException: Connection refused: connect
 	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
@@ -689,7 +689,7 @@ java.net.ConnectException: Connection refused: connect
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
-	at top.itcat.xuecheng.CourseApiApplication.main(CourseApiApplication.java:19)
+	at top.itcat.xuecheng.content.CourseApiApplication.main(CourseApiApplication.java:19)
 2023-02-03 16:02:19,467 ERROR [com.alibaba.nacos.client.naming.updater][NamingProxy.java:617] - [NA] failed to request
 java.net.ConnectException: Connection refused: connect
 	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
@@ -820,7 +820,7 @@ java.net.ConnectException: Connection refused: connect
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
-	at top.itcat.xuecheng.CourseApiApplication.main(CourseApiApplication.java:19)
+	at top.itcat.xuecheng.content.CourseApiApplication.main(CourseApiApplication.java:19)
 2023-02-03 16:02:20,495 ERROR [main][NamingProxy.java:617] - [NA] failed to request
 java.net.ConnectException: Connection refused: connect
 	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
@@ -877,7 +877,7 @@ java.net.ConnectException: Connection refused: connect
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
-	at top.itcat.xuecheng.CourseApiApplication.main(CourseApiApplication.java:19)
+	at top.itcat.xuecheng.content.CourseApiApplication.main(CourseApiApplication.java:19)
 2023-02-03 16:02:20,496 ERROR [main][NamingProxy.java:552] - request: /nacos/v1/ns/instance failed, servers: [localhost:8848], code: 500, msg: Connection refused: connect
 2023-02-03 16:02:20,496 ERROR [main][NamingProxy.java:552] - request: /nacos/v1/ns/instance failed, servers: [localhost:8848], code: 500, msg: Connection refused: connect
 2023-02-03 16:02:20,496 ERROR [main][NacosServiceRegistry.java:80] - nacos registry, content-api register failed...NacosRegistration{nacosDiscoveryProperties=NacosDiscoveryProperties{serverAddr='localhost:8848', endpoint='', namespace='', watchDelay=30000, logName='', service='content-api', weight=1.0, clusterName='DEFAULT', group='DEFAULT_GROUP', namingLoadCacheAtStart='false', metadata={preserved.register.source=SPRING_CLOUD}, registerEnabled=true, ip='192.168.2.4', networkInterface='', port=63040, secure=false, accessKey='', secretKey='', heartBeatInterval=null, heartBeatTimeout=null, ipDeleteTimeout=null, failFast=true}},
@@ -914,7 +914,7 @@ ErrCode:500, ErrMsg:failed to req API:/nacos/v1/ns/instance after all servers([l
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
-	at top.itcat.xuecheng.CourseApiApplication.main(CourseApiApplication.java:19)
+	at top.itcat.xuecheng.content.CourseApiApplication.main(CourseApiApplication.java:19)
 2023-02-03 16:02:20,496 ERROR [main][NacosServiceRegistry.java:80] - nacos registry, content-api register failed...NacosRegistration{nacosDiscoveryProperties=NacosDiscoveryProperties{serverAddr='localhost:8848', endpoint='', namespace='', watchDelay=30000, logName='', service='content-api', weight=1.0, clusterName='DEFAULT', group='DEFAULT_GROUP', namingLoadCacheAtStart='false', metadata={preserved.register.source=SPRING_CLOUD}, registerEnabled=true, ip='192.168.2.4', networkInterface='', port=63040, secure=false, accessKey='', secretKey='', heartBeatInterval=null, heartBeatTimeout=null, ipDeleteTimeout=null, failFast=true}},
 ErrCode:500, ErrMsg:failed to req API:/nacos/v1/ns/instance after all servers([localhost:8848]) tried: java.net.ConnectException: Connection refused: connect
 	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:556)
@@ -949,7 +949,7 @@ ErrCode:500, ErrMsg:failed to req API:/nacos/v1/ns/instance after all servers([l
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
-	at top.itcat.xuecheng.CourseApiApplication.main(CourseApiApplication.java:19)
+	at top.itcat.xuecheng.content.CourseApiApplication.main(CourseApiApplication.java:19)
 2023-02-03 16:02:20,498 WARN [main][AbstractApplicationContext.java:559] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is java.lang.reflect.UndeclaredThrowableException
 2023-02-03 16:02:20,498 WARN [main][AbstractApplicationContext.java:559] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is java.lang.reflect.UndeclaredThrowableException
 2023-02-03 16:02:20,502 INFO [main][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'
@@ -2452,7 +2452,7 @@ org.springframework.context.ApplicationContextException: Failed to start bean 'w
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
-	at top.itcat.xuecheng.CourseApiApplication.main(CourseApiApplication.java:19)
+	at top.itcat.xuecheng.content.CourseApiApplication.main(CourseApiApplication.java:19)
 Caused by: java.lang.reflect.UndeclaredThrowableException
 	at org.springframework.util.ReflectionUtils.rethrowRuntimeException(ReflectionUtils.java:147)
 	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.register(NacosServiceRegistry.java:82)
@@ -2494,7 +2494,7 @@ org.springframework.context.ApplicationContextException: Failed to start bean 'w
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
-	at top.itcat.xuecheng.CourseApiApplication.main(CourseApiApplication.java:19)
+	at top.itcat.xuecheng.content.CourseApiApplication.main(CourseApiApplication.java:19)
 Caused by: java.lang.reflect.UndeclaredThrowableException
 	at org.springframework.util.ReflectionUtils.rethrowRuntimeException(ReflectionUtils.java:147)
 	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.register(NacosServiceRegistry.java:82)
