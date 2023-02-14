@@ -11,7 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @date: 2023/02/03 <br/>
  * @version: 1.0.0 <br/>
  */
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"top.itcat.xuecheng"})
 @EnableSwagger2Doc
 public class CourseApiApplication {
 

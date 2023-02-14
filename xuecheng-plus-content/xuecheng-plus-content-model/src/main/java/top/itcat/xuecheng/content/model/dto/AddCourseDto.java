@@ -3,6 +3,7 @@ package top.itcat.xuecheng.content.model.dto;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
+import top.itcat.xuecheng.base.exception.ValidationGroups;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;

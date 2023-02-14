@@ -1,3 +1,102 @@
+GET http://localhost:63040/content/teachplan/117/tree-nodes
+Content-Type: application/json
+
+<> 2023-02-14T042032.200.json
+
+###
+
+GET http://localhost:63040/content/teachplan/117/tree-nodes
+Content-Type: application/json
+
+<> 2023-02-14T042001.200.json
+
+###
+
+GET http://localhost:63040/content/teachplan/117/tree-nodes
+Content-Type: application/json
+
+<> 2023-02-14T041659.200.json
+
+###
+
+GET http://localhost:63040/content/teachplan/117/tree-nodes
+
+<> 2023-02-14T041641.200.json
+
+###
+
+GET http://localhost:63040/content/teachplan/117/tree-nodes
+
+<> 2023-02-14T041515.200.json
+
+###
+
+GET http://localhost:63040/content/teachplan/117/tree-nodes
+
+<> 2023-02-14T041357.200.json
+
+###
+
+GET http://localhost:63040/content/teachplan/117/tree-nodes
+
+<> 2023-02-14T041301.200.json
+
+###
+
+GET http://localhost:63040/content/teachplan/2/tree-nodes
+
+<> 2023-02-14T040532.200.json
+
+###
+
+GET http://localhost:63040/content/teachplan/117/tree-nodes
+
+<> 2023-02-14T040503.200.json
+
+###
+
+GET http://localhost:63040/content/117/tree-nodes
+
+<> 2023-02-14T040429.404.json
+
+###
+
+GET http://localhost:63040/content/course/21
+
+<> 2023-02-13T045019.500.json
+
+###
+
+GET http://localhost:63040/content/course/21
+
+<> 2023-02-13T044639.500.json
+
+###
+
+GET http://localhost:63040/content/course/21
+
+<> 2023-02-13T044451.500.json
+
+###
+
+GET http://localhost:63040/content/course/21
+
+<> 2023-02-13T044355.500.json
+
+###
+
+GET http://localhost:63040/content/course/1
+
+<> 2023-02-13T044331.200.json
+
+###
+
+GET http://localhost:63040/content/1
+
+<> 2023-02-13T044231.404.json
+
+###
+
 GET http://localhost:63110/system/dictionary/all
 
 <> 2023-02-05T010626.200.json

@@ -10,11 +10,13 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import top.itcat.xuecheng.base.exception.XueChengPlusException;
 import top.itcat.xuecheng.base.model.PageParams;
 import top.itcat.xuecheng.base.model.PageResult;
 import top.itcat.xuecheng.content.mapper.CourseBaseMapper;
 import top.itcat.xuecheng.content.model.dto.AddCourseDto;
 import top.itcat.xuecheng.content.model.dto.CourseBaseInfoDto;
+import top.itcat.xuecheng.content.model.dto.EditCourseDto;
 import top.itcat.xuecheng.content.model.dto.QueryCourseParamsDto;
 import top.itcat.xuecheng.content.model.po.CourseBase;
 import top.itcat.xuecheng.content.model.po.CourseCategory;
@@ -77,16 +79,6 @@ public class CourseBaseServiceImpl extends ServiceImpl<CourseBaseMapper, CourseB
     @Transactional(rollbackFor = Exception.class)
     @Override
     public CourseBaseInfoDto createCourse(Long companyId, AddCourseDto addCourseDto) {
-        // TODO 参数合法性校验
-
-        // 如果课程收费标准是收费，而价格为空，抛出异常
-        // 可优化，避免魔法值，将改代码值放置配置文件中，通过读取配置文件得到改值
-        if ("201001".equals(addCourseDto.getCharge())) {
-            if (addCourseDto.getPrice() == null || addCourseDto.getPrice().floatValue() <= 0) {
-                throw new RuntimeException("课程为收费但价格为空！");
-            }
-        }
-
         // 课程基本信息属性拷贝
         CourseBase courseBase = new CourseBase();
         BeanUtils.copyProperties(addCourseDto, courseBase);
@@ -95,7 +87,7 @@ public class CourseBaseServiceImpl extends ServiceImpl<CourseBaseMapper, CourseB
         // 调用mapper向数据库中添加课程基本信息
         int saveCourseBaseResult = courseBaseMapper.insert(courseBase);
         if (saveCourseBaseResult <= 0) {
-            throw new RuntimeException("添加课程基本信息失败！");
+            XueChengPlusException.cast("添加课程基本信息失败！");
         }
 
         // 课程营销信息属性拷贝
@@ -103,32 +95,28 @@ public class CourseBaseServiceImpl extends ServiceImpl<CourseBaseMapper, CourseB
         BeanUtils.copyProperties(addCourseDto, courseMarket);
         Long courseId = courseBase.getId();
         if (courseId == null) {
-            throw new RuntimeException("courseId不存在");
+            XueChengPlusException.cast("courseId不存在");
         }
         courseMarket.setId(courseId);
         // 调用service服务添加课程营销信息
-        boolean saveCourseMarketResult = courseMarketService.save(courseMarket);
-        if (!saveCourseMarketResult) {
-            throw new RuntimeException("添加课程营销信息失败！");
+        int saveCourseMarketResult = saveCourseMarker(courseMarket);
+        if (saveCourseMarketResult <= 0) {
+            XueChengPlusException.cast("添加课程营销信息失败！");
         }
-        return getCourseBaseInfoResult(courseId);
+        return getCourseBaseInfoByCourseId(courseId);
     }
 
-    /**
-     * 组装CourseBaseInfoDTO
-     * @param courseId 课程id
-     * @return CourseBaseInfoDto
-     */
-    private CourseBaseInfoDto getCourseBaseInfoResult(Long courseId) {
+    @Override
+    public CourseBaseInfoDto getCourseBaseInfoByCourseId(Long courseId) {
         // 先查询课程基本信息
         CourseBase courseBase = courseBaseMapper.selectById(courseId);
         if (courseBase == null) {
-            throw new RuntimeException("找不到课程基本信息！");
+            XueChengPlusException.cast("找不到课程基本信息！");
         }
         // 查询课程营销信息
         CourseMarket courseMarket = courseMarketService.getById(courseId);
         if (courseMarket == null) {
-            throw new RuntimeException("找不到课程营销信息！");
+            XueChengPlusException.cast("找不到课程营销信息！");
         }
 
         // 填充响应结果
@@ -144,11 +132,62 @@ public class CourseBaseServiceImpl extends ServiceImpl<CourseBaseMapper, CourseB
         for (CourseCategory category : categoryList) {
             if (category.getId().equals(courseBase.getMt())) {
                 courseBaseInfoDto.setMtName(category.getName());
-            }else if (category.getId().equals(courseBase.getSt())) {
+            } else if (category.getId().equals(courseBase.getSt())) {
                 courseBaseInfoDto.setStName(category.getName());
             }
         }
         return courseBaseInfoDto;
+    }
+
+    @Override
+    public CourseBaseInfoDto editCourseBase(Long companyId, EditCourseDto dto) {
+        // 校验课程是否存在
+        CourseBase courseBase = courseBaseMapper.selectById(dto.getId());
+        if (courseBase == null) {
+            XueChengPlusException.cast("该课程不存在");
+        }
+
+        // 封装参数
+        BeanUtils.copyProperties(dto, courseBase);
+        // 设置修改时间
+        courseBase.setCreateDate(LocalDateTime.now());
+        // 调用修改
+        int updateCourseBaseResult = courseBaseMapper.updateById(courseBase);
+
+        // 封装课程营销信息
+        CourseMarket courseMarket = new CourseMarket();
+        BeanUtils.copyProperties(dto, courseMarket);
+
+        // 请求数据库，对营销表，有则更新，无则修改
+        int saveOrUpdateResult = saveCourseMarker(courseMarket);
+
+        if (updateCourseBaseResult <= 0 || saveOrUpdateResult <= 0) {
+            XueChengPlusException.cast("修改课程基本信息失败");
+        }
+
+        // 查询课程基本信息
+        return getCourseBaseInfoByCourseId(dto.getId());
+    }
+
+    /**
+     * 抽取对课程营销信息的保存
+     *
+     * @param courseMarket 课程营销信息
+     * @return int
+     */
+    private int saveCourseMarker(CourseMarket courseMarket) {
+        if (StringUtils.isBlank(courseMarket.getCharge())) {
+            XueChengPlusException.cast("收费规则未选取");
+        }
+        // 如果课程收费标准是收费，而价格为空，抛出异常
+        // 可优化，避免魔法值，将改代码值放置配置文件中，通过读取配置文件得到改值
+        if ("201001".equals(courseMarket.getCharge())) {
+            if (courseMarket.getPrice() == null || courseMarket.getPrice() <= 0) {
+                XueChengPlusException.cast("课程为收费但价格为空！");
+            }
+        }
+        boolean saveOrUpdateResult = courseMarketService.saveOrUpdate(courseMarket);
+        return saveOrUpdateResult ? 1 : 0;
     }
 
 }

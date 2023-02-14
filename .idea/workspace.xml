@@ -25,27 +25,38 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="86eee43a-b7b5-4079-851f-6b8891c9fe14" name="Default Changelist" comment="搭建系统管理模块，完成查询所有数据字典接口的开发">
-      <change afterPath="$PROJECT_DIR$/xuecheng-plus-base/src/main/java/top/itcat/xuecheng/base/exception/CommonError.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xuecheng-plus-base/src/main/java/top/itcat/xuecheng/base/exception/XueChengPlusException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-model/src/main/java/top/itcat/xuecheng/content/model/dto/AddCourseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-model/src/main/java/top/itcat/xuecheng/content/model/dto/CourseBaseInfoDto.java" afterDir="false" />
+    <list default="true" id="86eee43a-b7b5-4079-851f-6b8891c9fe14" name="Default Changelist" comment="新增课程接口的开发，统一异常处理">
+      <change afterPath="$PROJECT_DIR$/xuecheng-plus-base/src/main/java/top/itcat/xuecheng/base/exception/ValidationGroups.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-api/src/main/java/top/itcat/xuecheng/content/api/TeachplanController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-model/src/main/java/top/itcat/xuecheng/content/model/dto/EditCourseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-model/src/main/java/top/itcat/xuecheng/content/model/dto/SaveTeachplanDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-model/src/main/java/top/itcat/xuecheng/content/model/dto/TeachplanDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-test/xc-content-api.http" beforeDir="false" afterPath="$PROJECT_DIR$/api-test/xc-content-api.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2023-02-03/error.2023-02-03-15.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/2023-02-03/error.2023-02-03-15.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2023-02-03/error.2023-02-03-16.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/2023-02-03/error.2023-02-03-16.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2023-02-03/info.2023-02-03-15.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/2023-02-03/info.2023-02-03-15.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/2023-02-03/info.2023-02-03-16.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/2023-02-03/info.2023-02-03-16.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-api/src/main/java/top/itcat/xuecheng/CourseApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-api/src/main/java/top/itcat/xuecheng/content/CourseApiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-base/src/main/java/top/itcat/xuecheng/base/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-base/src/main/java/top/itcat/xuecheng/base/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-api/src/main/java/top/itcat/xuecheng/content/CourseApiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-api/src/main/java/top/itcat/xuecheng/content/CourseApiApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-api/src/main/java/top/itcat/xuecheng/content/api/CourseBaseInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-api/src/main/java/top/itcat/xuecheng/content/api/CourseBaseInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-api/src/main/java/top/itcat/xuecheng/content/api/CourseCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-api/src/main/java/top/itcat/xuecheng/content/api/CourseCategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-model/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-api/target/classes/top/itcat/xuecheng/CourseApiApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-api/target/classes/top/itcat/xuecheng/content/api/CourseBaseInfoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-api/target/classes/top/itcat/xuecheng/content/api/CourseBaseInfoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-model/src/main/java/top/itcat/xuecheng/content/model/dto/AddCourseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-model/src/main/java/top/itcat/xuecheng/content/model/dto/AddCourseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/src/main/java/top/itcat/xuecheng/content/mapper/TeachplanMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/src/main/java/top/itcat/xuecheng/content/mapper/TeachplanMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/src/main/java/top/itcat/xuecheng/content/mapper/TeachplanMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/src/main/java/top/itcat/xuecheng/content/mapper/TeachplanMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/src/main/java/top/itcat/xuecheng/content/service/CourseBaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/src/main/java/top/itcat/xuecheng/content/service/CourseBaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/src/main/java/top/itcat/xuecheng/content/service/CourseCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/src/main/java/top/itcat/xuecheng/content/service/CourseCategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/src/main/java/top/itcat/xuecheng/content/service/CourseMarketService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/src/main/java/top/itcat/xuecheng/content/service/CourseMarketService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/src/main/java/top/itcat/xuecheng/content/service/TeachplanService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/src/main/java/top/itcat/xuecheng/content/service/TeachplanService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/src/main/java/top/itcat/xuecheng/content/service/impl/CourseBaseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/src/main/java/top/itcat/xuecheng/content/service/impl/CourseBaseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/src/main/java/top/itcat/xuecheng/content/service/impl/CourseCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/src/main/java/top/itcat/xuecheng/content/service/impl/CourseCategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/src/test/java/top/itcat/xuecheng/content/service/CourseBaseServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/src/test/java/top/itcat/xuecheng/content/service/CourseBaseServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/src/main/java/top/itcat/xuecheng/content/service/impl/TeachplanServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/src/main/java/top/itcat/xuecheng/content/service/impl/TeachplanServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/src/test/java/top/itcat/xuecheng/content/service/CourseCategoryServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/src/test/java/top/itcat/xuecheng/content/service/CourseCategoryServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/target/classes/top/itcat/xuecheng/content/mapper/TeachplanMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/target/classes/top/itcat/xuecheng/content/mapper/TeachplanMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/target/classes/top/itcat/xuecheng/content/mapper/TeachplanMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/target/classes/top/itcat/xuecheng/content/mapper/TeachplanMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/target/classes/top/itcat/xuecheng/content/service/CourseBaseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/target/classes/top/itcat/xuecheng/content/service/CourseBaseService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/target/classes/top/itcat/xuecheng/content/service/CourseMarketService.class" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/target/classes/top/itcat/xuecheng/content/service/CourseMarketService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/target/classes/top/itcat/xuecheng/content/service/TeachplanService.class" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/target/classes/top/itcat/xuecheng/content/service/TeachplanService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/target/classes/top/itcat/xuecheng/content/service/impl/CourseBaseServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/target/classes/top/itcat/xuecheng/content/service/impl/CourseBaseServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/target/classes/top/itcat/xuecheng/content/service/impl/TeachplanServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/target/classes/top/itcat/xuecheng/content/service/impl/TeachplanServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/target/test-classes/top/itcat/xuecheng/content/service/CourseBaseServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/xuecheng-plus-content/xuecheng-plus-content-service/target/test-classes/top/itcat/xuecheng/content/service/CourseBaseServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,8 +66,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTTP Request" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -107,6 +118,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="top.itcat.xuecheng.content.api" />
       <recent name="top.itcat.xuecheng.system.model.po" />
       <recent name="top.itcat.xuecheng.content.service.impl" />
       <recent name="top.itcat.xuecheng.content.service" />
@@ -123,6 +135,63 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:63040/content/teachplan/117/tree-nodes" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:63040/content/teachplan/117/tree-nodes" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:63040/content/teachplan/2/tree-nodes" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:63040/content/117/tree-nodes" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:63040/content/course/21" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:63040/content/course/1" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:63040/content/1" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="GET" />
           <option name="urlBase" value="http://localhost:63110/system/dictionary/all" />
@@ -206,20 +275,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.xc-system-api#1">
-    <configuration name="ContentCodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.xuecheng.generator.ContentCodeGenerator" />
-      <module name="xuecheng-plus-generator" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.xuecheng.generator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.CourseApiApplication">
     <configuration name="SystemCodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.xuecheng.generator.SystemCodeGenerator" />
       <module name="xuecheng-plus-generator" />
@@ -233,24 +289,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="xc-system-api#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/api-test/xc-system-api.http" runType="Run single request">
+    <configuration name="xc-content-api#3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/api-test/xc-content-api.http" index="3" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="CourseCategoryServiceTest.testQueryTreeNodes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="xuecheng-plus-content-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="top.itcat.xuecheng.content.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="top.itcat.xuecheng.content.service" />
-      <option name="MAIN_CLASS_NAME" value="top.itcat.xuecheng.content.service.CourseCategoryServiceTest" />
-      <option name="METHOD_NAME" value="testQueryTreeNodes" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="xc-content-api#5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/api-test/xc-content-api.http" index="5" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="xc-system-api#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/api-test/xc-system-api.http" runType="Run single request">
+      <method v="2" />
     </configuration>
     <configuration name="CourseApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="xuecheng-plus-content-api" />
@@ -284,11 +330,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.xc-content-api#5" />
+        <item itemvalue="HTTP Request.xc-content-api#3" />
         <item itemvalue="HTTP Request.xc-system-api#1" />
         <item itemvalue="Spring Boot.SystemApplication" />
         <item itemvalue="Application.SystemCodeGenerator" />
-        <item itemvalue="JUnit.CourseCategoryServiceTest.testQueryTreeNodes" />
-        <item itemvalue="Application.ContentCodeGenerator" />
       </list>
     </recent_temporary>
   </component>
@@ -308,7 +354,9 @@
       <workItem from="1675514188753" duration="220000" />
       <workItem from="1675514796492" duration="6769000" />
       <workItem from="1675567632358" duration="8409000" />
-      <workItem from="1675650421972" duration="13642000" />
+      <workItem from="1675650421972" duration="14524000" />
+      <workItem from="1676262832473" duration="13213000" />
+      <workItem from="1676351846792" duration="9322000" />
     </task>
     <task id="LOCAL-00001" summary="环境搭建，课程查询接口开发">
       <created>1675501838241</created>
@@ -331,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675573707128</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="新增课程接口的开发，统一异常处理">
+      <created>1675677877810</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675677877810</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,7 +420,8 @@
     <MESSAGE value="环境搭建，课程查询接口开发" />
     <MESSAGE value="课程分类查询接口的开发" />
     <MESSAGE value="搭建系统管理模块，完成查询所有数据字典接口的开发" />
-    <option name="LAST_COMMIT_MESSAGE" value="搭建系统管理模块，完成查询所有数据字典接口的开发" />
+    <MESSAGE value="新增课程接口的开发，统一异常处理" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增课程接口的开发，统一异常处理" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="111" key="#Inspections" timestamp="1675492256150">
@@ -380,10 +436,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="270" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864/-1920.0.1280.720@0.0.1536.864" timestamp="1675488786749" />
-    <state x="574" y="138" key="#com.intellij.ide.util.MemberChooser" timestamp="1675668524604">
+    <state x="574" y="138" key="#com.intellij.ide.util.MemberChooser" timestamp="1676363607187">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="574" y="138" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864/-1920.0.1280.720@0.0.1536.864" timestamp="1675668524604" />
+    <state x="574" y="138" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864/-1920.0.1280.720@0.0.1536.864" timestamp="1676363607187" />
     <state x="574" y="138" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1675572403277" />
     <state x="398" y="355" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1675409338298">
       <screen x="0" y="0" width="1536" height="864" />
@@ -393,74 +449,74 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="566" y="289" key="#com.intellij.ws.actions.HttpClientConvertFromCurlDialog/0.0.1536.864/-1920.0.1280.720@0.0.1536.864" timestamp="1675501355017" />
-    <state width="1493" height="266" key="GridCell.Tab.0.bottom" timestamp="1675598599731">
+    <state width="1493" height="265" key="GridCell.Tab.0.bottom" timestamp="1676362845109">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="268" key="GridCell.Tab.0.bottom/0.0.1536.864/-1920.0.1280.720@0.0.1536.864" timestamp="1675513449491" />
+    <state width="1493" height="265" key="GridCell.Tab.0.bottom/0.0.1536.864/-1920.0.1280.720@0.0.1536.864" timestamp="1676362845109" />
     <state width="1493" height="266" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1675598599731" />
-    <state width="1493" height="266" key="GridCell.Tab.0.center" timestamp="1675598599730">
+    <state width="1493" height="265" key="GridCell.Tab.0.center" timestamp="1676362845109">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="268" key="GridCell.Tab.0.center/0.0.1536.864/-1920.0.1280.720@0.0.1536.864" timestamp="1675513449491" />
+    <state width="1493" height="265" key="GridCell.Tab.0.center/0.0.1536.864/-1920.0.1280.720@0.0.1536.864" timestamp="1676362845109" />
     <state width="1493" height="266" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1675598599730" />
-    <state width="1493" height="266" key="GridCell.Tab.0.left" timestamp="1675598599730">
+    <state width="1493" height="265" key="GridCell.Tab.0.left" timestamp="1676362845109">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="268" key="GridCell.Tab.0.left/0.0.1536.864/-1920.0.1280.720@0.0.1536.864" timestamp="1675513449491" />
+    <state width="1493" height="265" key="GridCell.Tab.0.left/0.0.1536.864/-1920.0.1280.720@0.0.1536.864" timestamp="1676362845109" />
     <state width="1493" height="266" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1675598599730" />
-    <state width="1493" height="266" key="GridCell.Tab.0.right" timestamp="1675598599730">
+    <state width="1493" height="265" key="GridCell.Tab.0.right" timestamp="1676362845109">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="268" key="GridCell.Tab.0.right/0.0.1536.864/-1920.0.1280.720@0.0.1536.864" timestamp="1675513449491" />
+    <state width="1493" height="265" key="GridCell.Tab.0.right/0.0.1536.864/-1920.0.1280.720@0.0.1536.864" timestamp="1676362845109" />
     <state width="1493" height="266" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1675598599730" />
-    <state width="1493" height="266" key="GridCell.Tab.1.bottom" timestamp="1675598599731">
+    <state width="1493" height="265" key="GridCell.Tab.1.bottom" timestamp="1676362834524">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="272" key="GridCell.Tab.1.bottom/0.0.1536.864/-1920.0.1280.720@0.0.1536.864" timestamp="1675500704101" />
+    <state width="1493" height="265" key="GridCell.Tab.1.bottom/0.0.1536.864/-1920.0.1280.720@0.0.1536.864" timestamp="1676362834524" />
     <state width="1493" height="266" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1675598599731" />
-    <state width="1493" height="266" key="GridCell.Tab.1.center" timestamp="1675598599731">
+    <state width="1493" height="265" key="GridCell.Tab.1.center" timestamp="1676362834524">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="272" key="GridCell.Tab.1.center/0.0.1536.864/-1920.0.1280.720@0.0.1536.864" timestamp="1675500704101" />
+    <state width="1493" height="265" key="GridCell.Tab.1.center/0.0.1536.864/-1920.0.1280.720@0.0.1536.864" timestamp="1676362834524" />
     <state width="1493" height="266" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1675598599731" />
-    <state width="1493" height="266" key="GridCell.Tab.1.left" timestamp="1675598599731">
+    <state width="1493" height="265" key="GridCell.Tab.1.left" timestamp="1676362834524">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="272" key="GridCell.Tab.1.left/0.0.1536.864/-1920.0.1280.720@0.0.1536.864" timestamp="1675500704101" />
+    <state width="1493" height="265" key="GridCell.Tab.1.left/0.0.1536.864/-1920.0.1280.720@0.0.1536.864" timestamp="1676362834524" />
     <state width="1493" height="266" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1675598599731" />
-    <state width="1493" height="266" key="GridCell.Tab.1.right" timestamp="1675598599731">
+    <state width="1493" height="265" key="GridCell.Tab.1.right" timestamp="1676362834524">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="272" key="GridCell.Tab.1.right/0.0.1536.864/-1920.0.1280.720@0.0.1536.864" timestamp="1675500704101" />
+    <state width="1493" height="265" key="GridCell.Tab.1.right/0.0.1536.864/-1920.0.1280.720@0.0.1536.864" timestamp="1676362834524" />
     <state width="1493" height="266" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1675598599731" />
-    <state width="1493" height="272" key="GridCell.Tab.2.bottom" timestamp="1675513944023">
+    <state width="1493" height="265" key="GridCell.Tab.2.bottom" timestamp="1676362834524">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="272" key="GridCell.Tab.2.bottom/0.0.1536.864/-1920.0.1280.720@0.0.1536.864" timestamp="1675500704102" />
+    <state width="1493" height="265" key="GridCell.Tab.2.bottom/0.0.1536.864/-1920.0.1280.720@0.0.1536.864" timestamp="1676362834524" />
     <state width="1493" height="272" key="GridCell.Tab.2.bottom/0.0.1536.864@0.0.1536.864" timestamp="1675513944023" />
-    <state width="1493" height="272" key="GridCell.Tab.2.center" timestamp="1675513944023">
+    <state width="1493" height="265" key="GridCell.Tab.2.center" timestamp="1676362834524">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="272" key="GridCell.Tab.2.center/0.0.1536.864/-1920.0.1280.720@0.0.1536.864" timestamp="1675500704102" />
+    <state width="1493" height="265" key="GridCell.Tab.2.center/0.0.1536.864/-1920.0.1280.720@0.0.1536.864" timestamp="1676362834524" />
     <state width="1493" height="272" key="GridCell.Tab.2.center/0.0.1536.864@0.0.1536.864" timestamp="1675513944023" />
-    <state width="1493" height="272" key="GridCell.Tab.2.left" timestamp="1675513944023">
+    <state width="1493" height="265" key="GridCell.Tab.2.left" timestamp="1676362834524">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="272" key="GridCell.Tab.2.left/0.0.1536.864/-1920.0.1280.720@0.0.1536.864" timestamp="1675500704101" />
+    <state width="1493" height="265" key="GridCell.Tab.2.left/0.0.1536.864/-1920.0.1280.720@0.0.1536.864" timestamp="1676362834524" />
     <state width="1493" height="272" key="GridCell.Tab.2.left/0.0.1536.864@0.0.1536.864" timestamp="1675513944023" />
-    <state width="1493" height="272" key="GridCell.Tab.2.right" timestamp="1675513944023">
+    <state width="1493" height="265" key="GridCell.Tab.2.right" timestamp="1676362834524">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="272" key="GridCell.Tab.2.right/0.0.1536.864/-1920.0.1280.720@0.0.1536.864" timestamp="1675500704102" />
+    <state width="1493" height="265" key="GridCell.Tab.2.right/0.0.1536.864/-1920.0.1280.720@0.0.1536.864" timestamp="1676362834524" />
     <state width="1493" height="272" key="GridCell.Tab.2.right/0.0.1536.864@0.0.1536.864" timestamp="1675513944023" />
     <state x="249" y="7" key="SettingsEditor" timestamp="1675500448223">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="249" y="7" key="SettingsEditor/0.0.1536.864/-1920.0.1280.720@0.0.1536.864" timestamp="1675500448223" />
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1675573799887">
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2" timestamp="1675677885974">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1280.720@0.0.1536.864" timestamp="1675501892249" />
+    <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864/-1920.0.1280.720@0.0.1536.864" timestamp="1675677885974" />
     <state x="361" y="165" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1675573799887" />
     <state x="231" y="38" key="new project wizard" timestamp="1675571248107">
       <screen x="0" y="0" width="1536" height="864" />
@@ -471,9 +527,9 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="425" y="197" key="run.anything.popup/0.0.1536.864/-1920.0.1280.720@0.0.1536.864" timestamp="1675496763939" />
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1675657792657">
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1676351885442">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864/-1920.0.1280.720@0.0.1536.864" timestamp="1675657792657" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864/-1920.0.1280.720@0.0.1536.864" timestamp="1676351885442" />
   </component>
 </project>

@@ -5,6 +5,7 @@ import top.itcat.xuecheng.base.model.PageParams;
 import top.itcat.xuecheng.base.model.PageResult;
 import top.itcat.xuecheng.content.model.dto.AddCourseDto;
 import top.itcat.xuecheng.content.model.dto.CourseBaseInfoDto;
+import top.itcat.xuecheng.content.model.dto.EditCourseDto;
 import top.itcat.xuecheng.content.model.dto.QueryCourseParamsDto;
 import top.itcat.xuecheng.content.model.po.CourseBase;
 
@@ -20,7 +21,8 @@ public interface CourseBaseService extends IService<CourseBase> {
 
     /**
      * 课程查询
-     * @param params 分页参数
+     *
+     * @param params               分页参数
      * @param queryCourseParamsDto 查询条件
      * @return PageResult<CourseBase>
      */
@@ -28,9 +30,27 @@ public interface CourseBaseService extends IService<CourseBase> {
 
     /**
      * 添加课程
-     * @param companyId 机构id
+     *
+     * @param companyId    机构id
      * @param addCourseDto 课程信息
      * @return 课程基本信息
      */
     CourseBaseInfoDto createCourse(Long companyId, AddCourseDto addCourseDto);
+
+    /**
+     * 根据课程id查询课程基本信息
+     *
+     * @param courseId 课程id
+     * @return 课程基本信息
+     */
+    CourseBaseInfoDto getCourseBaseInfoByCourseId(Long courseId);
+
+    /**
+     * 修改课程基本信息
+     *
+     * @param companyId 机构id
+     * @param dto       课程信息
+     * @return
+     */
+    CourseBaseInfoDto editCourseBase(Long companyId, EditCourseDto dto);
 }
