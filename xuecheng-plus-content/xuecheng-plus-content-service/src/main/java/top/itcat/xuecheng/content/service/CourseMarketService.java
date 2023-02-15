@@ -13,4 +13,9 @@ import top.itcat.xuecheng.content.model.po.CourseMarket;
  */
 public interface CourseMarketService extends IService<CourseMarket> {
 
+    /**
+     * 根据课程id删除该课程的所有营销信息
+     * @param courseId 课程id
+     */
+    void removeCourseMarketByCourseId(Long courseId);
 }

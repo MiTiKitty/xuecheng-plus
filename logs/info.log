@@ -1,138 +1,52 @@
-2023-02-14 16:04:06,260 INFO [main][GenericScope.java:295] - BeanFactory id=81b07dc0-b47e-3817-ab6d-4025ca448898
-2023-02-14 16:04:06,260 INFO [main][GenericScope.java:295] - BeanFactory id=81b07dc0-b47e-3817-ab6d-4025ca448898
-2023-02-14 16:04:06,640 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 63040 (http)
-2023-02-14 16:04:06,640 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 63040 (http)
-2023-02-14 16:04:06,948 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 1910 ms
-2023-02-14 16:04:06,948 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 1910 ms
-2023-02-14 16:04:08,707 INFO [main][PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2023-02-14 16:04:08,707 INFO [main][PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2023-02-14 16:04:08,830 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
-2023-02-14 16:04:08,830 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
-2023-02-14 16:04:09,113 WARN [main][FreeMarkerAutoConfiguration.java:65] - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2023-02-14 16:04:09,113 WARN [main][FreeMarkerAutoConfiguration.java:65] - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2023-02-14 16:04:09,296 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 63040 (http) with context path '/content'
-2023-02-14 16:04:09,296 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 63040 (http) with context path '/content'
-2023-02-14 16:04:09,298 INFO [main][DocumentationPluginsBootstrapper.java:160] - Context refreshed
-2023-02-14 16:04:09,298 INFO [main][DocumentationPluginsBootstrapper.java:160] - Context refreshed
-2023-02-14 16:04:09,325 INFO [main][DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
-2023-02-14 16:04:09,325 INFO [main][DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
-2023-02-14 16:04:09,379 INFO [main][ApiListingReferenceScanner.java:41] - Scanning for api listing references
-2023-02-14 16:04:09,379 INFO [main][ApiListingReferenceScanner.java:41] - Scanning for api listing references
-2023-02-14 16:04:09,545 INFO [main][CachingOperationNameGenerator.java:40] - Generating unique operation named: queryTreeNodesUsingGET_1
-2023-02-14 16:04:09,545 INFO [main][CachingOperationNameGenerator.java:40] - Generating unique operation named: queryTreeNodesUsingGET_1
-2023-02-14 16:04:29,582 INFO [http-nio-63040-exec-3][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
-2023-02-14 16:04:29,582 INFO [http-nio-63040-exec-3][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
-2023-02-14 16:04:29,594 INFO [http-nio-63040-exec-3][FrameworkServlet.java:547] - Completed initialization in 11 ms
-2023-02-14 16:04:29,594 INFO [http-nio-63040-exec-3][FrameworkServlet.java:547] - Completed initialization in 11 ms
-2023-02-14 16:12:41,670 INFO [main][GenericScope.java:295] - BeanFactory id=81b07dc0-b47e-3817-ab6d-4025ca448898
-2023-02-14 16:12:41,670 INFO [main][GenericScope.java:295] - BeanFactory id=81b07dc0-b47e-3817-ab6d-4025ca448898
-2023-02-14 16:12:41,986 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 63040 (http)
-2023-02-14 16:12:41,986 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 63040 (http)
-2023-02-14 16:12:42,235 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 1533 ms
-2023-02-14 16:12:42,235 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 1533 ms
-2023-02-14 16:12:43,707 INFO [main][PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2023-02-14 16:12:43,707 INFO [main][PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2023-02-14 16:12:43,849 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
-2023-02-14 16:12:43,849 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
-2023-02-14 16:12:44,071 WARN [main][FreeMarkerAutoConfiguration.java:65] - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2023-02-14 16:12:44,071 WARN [main][FreeMarkerAutoConfiguration.java:65] - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2023-02-14 16:12:44,200 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 63040 (http) with context path '/content'
-2023-02-14 16:12:44,200 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 63040 (http) with context path '/content'
-2023-02-14 16:12:44,202 INFO [main][DocumentationPluginsBootstrapper.java:160] - Context refreshed
-2023-02-14 16:12:44,202 INFO [main][DocumentationPluginsBootstrapper.java:160] - Context refreshed
-2023-02-14 16:12:44,221 INFO [main][DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
-2023-02-14 16:12:44,221 INFO [main][DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
-2023-02-14 16:12:44,278 INFO [main][ApiListingReferenceScanner.java:41] - Scanning for api listing references
-2023-02-14 16:12:44,278 INFO [main][ApiListingReferenceScanner.java:41] - Scanning for api listing references
-2023-02-14 16:12:44,524 INFO [main][CachingOperationNameGenerator.java:40] - Generating unique operation named: queryTreeNodesUsingGET_1
-2023-02-14 16:12:44,524 INFO [main][CachingOperationNameGenerator.java:40] - Generating unique operation named: queryTreeNodesUsingGET_1
-2023-02-14 16:12:51,947 INFO [http-nio-63040-exec-1][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
-2023-02-14 16:12:51,947 INFO [http-nio-63040-exec-1][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
-2023-02-14 16:12:51,958 INFO [http-nio-63040-exec-1][FrameworkServlet.java:547] - Completed initialization in 10 ms
-2023-02-14 16:12:51,958 INFO [http-nio-63040-exec-1][FrameworkServlet.java:547] - Completed initialization in 10 ms
-2023-02-14 16:14:20,826 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'
-2023-02-14 16:14:20,826 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'
-2023-02-14 16:15:04,933 INFO [main][GenericScope.java:295] - BeanFactory id=81b07dc0-b47e-3817-ab6d-4025ca448898
-2023-02-14 16:15:04,933 INFO [main][GenericScope.java:295] - BeanFactory id=81b07dc0-b47e-3817-ab6d-4025ca448898
-2023-02-14 16:15:05,214 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 63040 (http)
-2023-02-14 16:15:05,214 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 63040 (http)
-2023-02-14 16:15:05,614 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 1639 ms
-2023-02-14 16:15:05,614 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 1639 ms
-2023-02-14 16:15:07,005 INFO [main][PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2023-02-14 16:15:07,005 INFO [main][PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2023-02-14 16:15:07,097 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
-2023-02-14 16:15:07,097 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
-2023-02-14 16:15:07,253 WARN [main][FreeMarkerAutoConfiguration.java:65] - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2023-02-14 16:15:07,253 WARN [main][FreeMarkerAutoConfiguration.java:65] - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2023-02-14 16:15:07,355 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 63040 (http) with context path '/content'
-2023-02-14 16:15:07,355 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 63040 (http) with context path '/content'
-2023-02-14 16:15:07,356 INFO [main][DocumentationPluginsBootstrapper.java:160] - Context refreshed
-2023-02-14 16:15:07,356 INFO [main][DocumentationPluginsBootstrapper.java:160] - Context refreshed
-2023-02-14 16:15:07,370 INFO [main][DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
-2023-02-14 16:15:07,370 INFO [main][DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
-2023-02-14 16:15:07,401 INFO [main][ApiListingReferenceScanner.java:41] - Scanning for api listing references
-2023-02-14 16:15:07,401 INFO [main][ApiListingReferenceScanner.java:41] - Scanning for api listing references
-2023-02-14 16:15:07,573 INFO [main][CachingOperationNameGenerator.java:40] - Generating unique operation named: queryTreeNodesUsingGET_1
-2023-02-14 16:15:07,573 INFO [main][CachingOperationNameGenerator.java:40] - Generating unique operation named: queryTreeNodesUsingGET_1
-2023-02-14 16:15:14,519 INFO [http-nio-63040-exec-2][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
-2023-02-14 16:15:14,519 INFO [http-nio-63040-exec-2][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
-2023-02-14 16:15:14,526 INFO [http-nio-63040-exec-2][FrameworkServlet.java:547] - Completed initialization in 7 ms
-2023-02-14 16:15:14,526 INFO [http-nio-63040-exec-2][FrameworkServlet.java:547] - Completed initialization in 7 ms
-2023-02-14 16:15:31,926 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'
-2023-02-14 16:15:31,926 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'
-2023-02-14 16:16:06,024 INFO [main][GenericScope.java:295] - BeanFactory id=81b07dc0-b47e-3817-ab6d-4025ca448898
-2023-02-14 16:16:06,024 INFO [main][GenericScope.java:295] - BeanFactory id=81b07dc0-b47e-3817-ab6d-4025ca448898
-2023-02-14 16:16:06,300 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 63040 (http)
-2023-02-14 16:16:06,300 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 63040 (http)
-2023-02-14 16:16:06,629 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 1597 ms
-2023-02-14 16:16:06,629 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 1597 ms
-2023-02-14 16:16:08,006 INFO [main][PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2023-02-14 16:16:08,006 INFO [main][PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2023-02-14 16:16:08,098 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
-2023-02-14 16:16:08,098 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
-2023-02-14 16:16:08,255 WARN [main][FreeMarkerAutoConfiguration.java:65] - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2023-02-14 16:16:08,255 WARN [main][FreeMarkerAutoConfiguration.java:65] - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2023-02-14 16:16:08,348 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 63040 (http) with context path '/content'
-2023-02-14 16:16:08,348 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 63040 (http) with context path '/content'
-2023-02-14 16:16:08,349 INFO [main][DocumentationPluginsBootstrapper.java:160] - Context refreshed
-2023-02-14 16:16:08,349 INFO [main][DocumentationPluginsBootstrapper.java:160] - Context refreshed
-2023-02-14 16:16:08,359 INFO [main][DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
-2023-02-14 16:16:08,359 INFO [main][DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
-2023-02-14 16:16:08,392 INFO [main][ApiListingReferenceScanner.java:41] - Scanning for api listing references
-2023-02-14 16:16:08,392 INFO [main][ApiListingReferenceScanner.java:41] - Scanning for api listing references
-2023-02-14 16:16:08,556 INFO [main][CachingOperationNameGenerator.java:40] - Generating unique operation named: queryTreeNodesUsingGET_1
-2023-02-14 16:16:08,556 INFO [main][CachingOperationNameGenerator.java:40] - Generating unique operation named: queryTreeNodesUsingGET_1
-2023-02-14 16:16:12,024 INFO [http-nio-63040-exec-2][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
-2023-02-14 16:16:12,024 INFO [http-nio-63040-exec-2][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
-2023-02-14 16:16:12,035 INFO [http-nio-63040-exec-2][FrameworkServlet.java:547] - Completed initialization in 10 ms
-2023-02-14 16:16:12,035 INFO [http-nio-63040-exec-2][FrameworkServlet.java:547] - Completed initialization in 10 ms
-2023-02-14 16:20:01,438 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'
-2023-02-14 16:20:01,438 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'
-2023-02-14 16:20:23,501 INFO [main][GenericScope.java:295] - BeanFactory id=81b07dc0-b47e-3817-ab6d-4025ca448898
-2023-02-14 16:20:23,501 INFO [main][GenericScope.java:295] - BeanFactory id=81b07dc0-b47e-3817-ab6d-4025ca448898
-2023-02-14 16:20:23,762 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 63040 (http)
-2023-02-14 16:20:23,762 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 63040 (http)
-2023-02-14 16:20:24,019 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 1469 ms
-2023-02-14 16:20:24,019 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 1469 ms
-2023-02-14 16:20:25,157 INFO [main][PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2023-02-14 16:20:25,157 INFO [main][PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2023-02-14 16:20:25,243 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
-2023-02-14 16:20:25,243 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
-2023-02-14 16:20:25,380 WARN [main][FreeMarkerAutoConfiguration.java:65] - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2023-02-14 16:20:25,380 WARN [main][FreeMarkerAutoConfiguration.java:65] - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
-2023-02-14 16:20:25,466 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 63040 (http) with context path '/content'
-2023-02-14 16:20:25,466 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 63040 (http) with context path '/content'
-2023-02-14 16:20:25,467 INFO [main][DocumentationPluginsBootstrapper.java:160] - Context refreshed
-2023-02-14 16:20:25,467 INFO [main][DocumentationPluginsBootstrapper.java:160] - Context refreshed
-2023-02-14 16:20:25,476 INFO [main][DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
-2023-02-14 16:20:25,476 INFO [main][DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
-2023-02-14 16:20:25,502 INFO [main][ApiListingReferenceScanner.java:41] - Scanning for api listing references
-2023-02-14 16:20:25,502 INFO [main][ApiListingReferenceScanner.java:41] - Scanning for api listing references
-2023-02-14 16:20:25,632 INFO [main][CachingOperationNameGenerator.java:40] - Generating unique operation named: queryTreeNodesUsingGET_1
-2023-02-14 16:20:25,632 INFO [main][CachingOperationNameGenerator.java:40] - Generating unique operation named: queryTreeNodesUsingGET_1
-2023-02-14 16:20:30,475 INFO [http-nio-63040-exec-1][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
-2023-02-14 16:20:30,475 INFO [http-nio-63040-exec-1][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
-2023-02-14 16:20:30,483 INFO [http-nio-63040-exec-1][FrameworkServlet.java:547] - Completed initialization in 8 ms
-2023-02-14 16:20:30,483 INFO [http-nio-63040-exec-1][FrameworkServlet.java:547] - Completed initialization in 8 ms
-2023-02-14 16:21:36,558 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'
-2023-02-14 16:21:36,558 INFO [SpringContextShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2023-02-15 15:12:45,963 INFO [main][GenericScope.java:295] - BeanFactory id=06a19a29-c48f-3f2f-b94a-71d50e9c197d
+2023-02-15 15:12:45,963 INFO [main][GenericScope.java:295] - BeanFactory id=06a19a29-c48f-3f2f-b94a-71d50e9c197d
+2023-02-15 15:12:46,185 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 63040 (http)
+2023-02-15 15:12:46,185 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 63040 (http)
+2023-02-15 15:12:46,352 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 1097 ms
+2023-02-15 15:12:46,352 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 1097 ms
+2023-02-15 15:12:47,456 INFO [main][PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-02-15 15:12:47,456 INFO [main][PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-02-15 15:12:47,528 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2023-02-15 15:12:47,528 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2023-02-15 15:12:47,673 WARN [main][FreeMarkerAutoConfiguration.java:65] - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2023-02-15 15:12:47,673 WARN [main][FreeMarkerAutoConfiguration.java:65] - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2023-02-15 15:12:47,746 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 63040 (http) with context path '/content'
+2023-02-15 15:12:47,746 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 63040 (http) with context path '/content'
+2023-02-15 15:12:47,747 INFO [main][DocumentationPluginsBootstrapper.java:160] - Context refreshed
+2023-02-15 15:12:47,747 INFO [main][DocumentationPluginsBootstrapper.java:160] - Context refreshed
+2023-02-15 15:12:47,756 INFO [main][DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
+2023-02-15 15:12:47,756 INFO [main][DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
+2023-02-15 15:12:47,781 INFO [main][ApiListingReferenceScanner.java:41] - Scanning for api listing references
+2023-02-15 15:12:47,781 INFO [main][ApiListingReferenceScanner.java:41] - Scanning for api listing references
+2023-02-15 15:12:47,898 INFO [main][CachingOperationNameGenerator.java:40] - Generating unique operation named: queryTreeNodesUsingGET_1
+2023-02-15 15:12:47,898 INFO [main][CachingOperationNameGenerator.java:40] - Generating unique operation named: queryTreeNodesUsingGET_1
+2023-02-15 15:13:05,755 INFO [http-nio-63040-exec-1][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+2023-02-15 15:13:05,755 INFO [http-nio-63040-exec-1][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+2023-02-15 15:13:05,762 INFO [http-nio-63040-exec-1][FrameworkServlet.java:547] - Completed initialization in 6 ms
+2023-02-15 15:13:05,762 INFO [http-nio-63040-exec-1][FrameworkServlet.java:547] - Completed initialization in 6 ms
+2023-02-15 15:22:02,150 INFO [main][GenericScope.java:295] - BeanFactory id=06a19a29-c48f-3f2f-b94a-71d50e9c197d
+2023-02-15 15:22:02,150 INFO [main][GenericScope.java:295] - BeanFactory id=06a19a29-c48f-3f2f-b94a-71d50e9c197d
+2023-02-15 15:22:02,410 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 63040 (http)
+2023-02-15 15:22:02,410 INFO [main][TomcatWebServer.java:108] - Tomcat initialized with port(s): 63040 (http)
+2023-02-15 15:22:02,643 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 1416 ms
+2023-02-15 15:22:02,643 INFO [main][ServletWebServerApplicationContext.java:285] - Root WebApplicationContext: initialization completed in 1416 ms
+2023-02-15 15:22:03,764 INFO [main][PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-02-15 15:22:03,764 INFO [main][PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-02-15 15:22:03,842 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2023-02-15 15:22:03,842 INFO [main][ExecutorConfigurationSupport.java:181] - Initializing ExecutorService 'applicationTaskExecutor'
+2023-02-15 15:22:04,000 WARN [main][FreeMarkerAutoConfiguration.java:65] - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2023-02-15 15:22:04,000 WARN [main][FreeMarkerAutoConfiguration.java:65] - Cannot find template location(s): [classpath:/templates/] (please add some templates, check your FreeMarker configuration, or set spring.freemarker.checkTemplateLocation=false)
+2023-02-15 15:22:04,076 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 63040 (http) with context path '/content'
+2023-02-15 15:22:04,076 INFO [main][TomcatWebServer.java:220] - Tomcat started on port(s): 63040 (http) with context path '/content'
+2023-02-15 15:22:04,078 INFO [main][DocumentationPluginsBootstrapper.java:160] - Context refreshed
+2023-02-15 15:22:04,078 INFO [main][DocumentationPluginsBootstrapper.java:160] - Context refreshed
+2023-02-15 15:22:04,087 INFO [main][DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
+2023-02-15 15:22:04,087 INFO [main][DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
+2023-02-15 15:22:04,124 INFO [main][ApiListingReferenceScanner.java:41] - Scanning for api listing references
+2023-02-15 15:22:04,124 INFO [main][ApiListingReferenceScanner.java:41] - Scanning for api listing references
+2023-02-15 15:22:04,276 INFO [main][CachingOperationNameGenerator.java:40] - Generating unique operation named: queryTreeNodesUsingGET_1
+2023-02-15 15:22:04,276 INFO [main][CachingOperationNameGenerator.java:40] - Generating unique operation named: queryTreeNodesUsingGET_1
+2023-02-15 15:22:09,758 INFO [http-nio-63040-exec-1][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+2023-02-15 15:22:09,758 INFO [http-nio-63040-exec-1][FrameworkServlet.java:525] - Initializing Servlet 'dispatcherServlet'
+2023-02-15 15:22:09,767 INFO [http-nio-63040-exec-1][FrameworkServlet.java:547] - Completed initialization in 6 ms
+2023-02-15 15:22:09,767 INFO [http-nio-63040-exec-1][FrameworkServlet.java:547] - Completed initialization in 6 ms

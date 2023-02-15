@@ -30,4 +30,24 @@ public interface TeachplanService extends IService<Teachplan> {
      * @param dto 课程计划模型类
      */
     void saveOrUpdateTeachplan(SaveTeachplanDto dto);
+
+    /**
+     * 根据课程计划id删除课程计划及其相关信息
+     * @param id 课程计划id
+     * @return 课程计划id
+     */
+    long removeTeachplanById(Long id);
+
+    /**
+     * 课程计划排序，moveup上移，movedown下移
+     * @param type
+     * @param id
+     */
+    void move(String type, Long id);
+
+    /**
+     * 根据课程id删除所有课程计划
+     * @param courseId 课程id
+     */
+    void removeTeachplanByCourseId(Long courseId);
 }

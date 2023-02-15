@@ -1,3 +1,97 @@
+GET http://localhost:63040/content/courseTeacher/list/74
+
+<> 2023-02-15T032329.200.json
+
+###
+
+DELETE http://localhost:63040/content/courseTeacher/74/21
+
+###
+
+GET http://localhost:63040/content/course/74
+
+<> 2023-02-15T032308.200.json
+
+###
+
+GET http://localhost:63040/content/teachplan/74/tree-nodes
+Content-Type: application/json
+
+<> 2023-02-15T032235.200.json
+
+###
+
+GET http://localhost:63040/content/courseTeacher/list/74
+
+<> 2023-02-15T032210.200.json
+
+###
+
+GET http://localhost:63040/content/courseTeacher/list/74
+
+<> 2023-02-15T031429.200.json
+
+###
+
+POST http://localhost:63040/content/courseTeacher
+Content-Type: application/json
+
+{
+  "id": 21,
+  "courseId": 74,
+  "teacherName": "王老师",
+  "position": "讲师",
+  "introduction": "非常厉害"
+}
+
+<> 2023-02-15T031420.200.json
+
+###
+
+GET http://localhost:63040/content/courseTeacher/list/74
+
+<> 2023-02-15T031317.200.json
+
+###
+
+POST http://localhost:63040/content/courseTeacher
+Content-Type: application/json
+
+{
+  "courseId": 74,
+  "teacherName": "王老师",
+  "position": "教师职位",
+  "introduction": "教师简介"
+}
+
+<> 2023-02-15T031307.200.json
+
+###
+
+GET http://localhost:63040/content/courseTeacher/list/74
+
+<> 2023-02-15T025935.200.json
+
+###
+
+GET http://localhost:63040/content.courseTeacher/list/74
+
+<> 2023-02-15T025906.404.html
+
+###
+
+POST http://localhost:63040/content/teachplan/moveup/268
+
+###
+
+POST http://localhost:63040/content/teachplan/moveup/268
+
+###
+
+POST http://localhost:63040/content/teachplan/movedown/268
+
+###
+
 GET http://localhost:63040/content/teachplan/117/tree-nodes
 Content-Type: application/json
 

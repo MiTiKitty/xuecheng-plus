@@ -6,6 +6,7 @@ import groovy.util.logging.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import top.itcat.xuecheng.content.mapper.CourseCategoryMapper;
 import top.itcat.xuecheng.content.model.dto.CourseCategoryDto;
 import top.itcat.xuecheng.content.model.po.CourseCategory;
@@ -22,6 +23,7 @@ import java.util.*;
  */
 @Slf4j
 @Service
+@Transactional(rollbackFor = Exception.class)
 public class CourseCategoryServiceImpl extends ServiceImpl<CourseCategoryMapper, CourseCategory> implements CourseCategoryService {
 
     @Autowired

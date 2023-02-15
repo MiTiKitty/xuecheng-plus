@@ -94,4 +94,19 @@
         order by one.orderby,
                  two.orderby
     </select>
+
+    <select id="selectMaxOrderBySameNode" resultType="integer">
+        select max(orderby)
+        from teachplan
+        where parentid = #{parentId} and course_id = #{courseId}
+    </select>
+
+    <update id="updateOrderById">
+        update teachplan t1, teachplan t2
+        set
+            t1.orderby = t2.orderby,
+            t2.orderby = t1.orderby
+        where t1.id = #{id} and t2.id = #{orderId};
+    </update>
+
 </mapper>

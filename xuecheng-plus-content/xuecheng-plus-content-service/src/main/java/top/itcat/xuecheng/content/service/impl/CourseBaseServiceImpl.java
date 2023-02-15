@@ -21,9 +21,7 @@ import top.itcat.xuecheng.content.model.dto.QueryCourseParamsDto;
 import top.itcat.xuecheng.content.model.po.CourseBase;
 import top.itcat.xuecheng.content.model.po.CourseCategory;
 import top.itcat.xuecheng.content.model.po.CourseMarket;
-import top.itcat.xuecheng.content.service.CourseBaseService;
-import top.itcat.xuecheng.content.service.CourseCategoryService;
-import top.itcat.xuecheng.content.service.CourseMarketService;
+import top.itcat.xuecheng.content.service.*;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -38,6 +36,7 @@ import java.util.List;
  */
 @Slf4j
 @Service
+@Transactional(rollbackFor = Exception.class)
 public class CourseBaseServiceImpl extends ServiceImpl<CourseBaseMapper, CourseBase> implements CourseBaseService {
 
     @Autowired
@@ -48,6 +47,12 @@ public class CourseBaseServiceImpl extends ServiceImpl<CourseBaseMapper, CourseB
 
     @Autowired
     private CourseCategoryService courseCategoryService;
+
+    @Autowired
+    private TeachplanService teachplanService;
+
+    @Autowired
+    private CourseTeacherService courseTeacherService;
 
     @Override
     public PageResult<CourseBase> queryCourseBaseList(PageParams params, QueryCourseParamsDto queryCourseParamsDto) {
@@ -76,7 +81,6 @@ public class CourseBaseServiceImpl extends ServiceImpl<CourseBaseMapper, CourseB
         return new PageResult<>(page.getRecords(), page.getTotal(), params.getPageNo(), params.getPageSize());
     }
 
-    @Transactional(rollbackFor = Exception.class)
     @Override
     public CourseBaseInfoDto createCourse(Long companyId, AddCourseDto addCourseDto) {
         // 课程基本信息属性拷贝
@@ -167,6 +171,22 @@ public class CourseBaseServiceImpl extends ServiceImpl<CourseBaseMapper, CourseB
 
         // 查询课程基本信息
         return getCourseBaseInfoByCourseId(dto.getId());
+    }
+
+    @Override
+    public void removeCourseById(Long id) {
+        // 要删除课程相关的基本信息、营销信息、课程计划、课程教师信息。
+        // 1、删除课程相关的基本信息
+        int deleteCourseBaseResult = courseBaseMapper.deleteById(id);
+        if (deleteCourseBaseResult <= 0) {
+            XueChengPlusException.cast("删除课程基本信息失败！");
+        }
+        // 2、删除课程相关的营销信息
+        courseMarketService.removeCourseMarketByCourseId(id);
+        // 3、删除课程相关的课程计划
+        teachplanService.removeTeachplanByCourseId(id);
+        // 4、删除课程相关的课程教师信息
+        courseTeacherService.removeTeacherByCourseId(id);
     }
 
     /**
